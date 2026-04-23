@@ -63,4 +63,35 @@ multiple-choice medical questions across 5 options (A–E).
 
 ---
 
+## 🔍 Example Prediction
+
+```python
+question = """
+Q: A 23-year-old pregnant woman at 22 weeks gestation presents 
+with burning upon urination...
+"""
+
+predict(question)
+# Output: E (Nitrofurantoin) ✅
+```
+
+---
+
+## 🔧 Known Issues & Future Improvements
+
+- [ ] Increase accuracy beyond 35% using larger models
+- [ ] Try `dmis-lab/biobert-large-cased-v1.1` for better performance  
+- [ ] Add data augmentation to expand the 10k dataset
+- [ ] Deploy as a web app using Gradio or Streamlit
+- [ ] Experiment with few-shot prompting using larger LLMs
+
+---
+
+## 📚 References
+
+- [BiomedBERT Paper](https://arxiv.org/abs/2007.15779)
+- [MedQA Dataset](https://huggingface.co/datasets/medalpaca/medical_meadow_medqa)
+- [Hugging Face Transformers](https://huggingface.co/docs/transformers)
+
+
 ## 🗂️ Project Structure
