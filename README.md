@@ -13,6 +13,16 @@ multiple-choice medical questions across 5 options (A–E).
 
 ---
 
+## 🗂️ Project Structure
+
+├── medical_qa.ipynb        # Main training notebook
+├── data.json               # Dataset (from Hugging Face)
+├── medical_model_mc/       # Saved model weights
+│   ├── config.json
+│   ├── model.safetensors
+│   └── tokenizer files
+└── README.md
+
 ## 📊 Dataset
 
 - **Source:** [Medical Meadow MedQA](https://huggingface.co/datasets/medalpaca/medical_meadow_medqa)
@@ -93,5 +103,3 @@ predict(question)
 - [MedQA Dataset](https://huggingface.co/datasets/medalpaca/medical_meadow_medqa)
 - [Hugging Face Transformers](https://huggingface.co/docs/transformers)
 
-
-## 🗂️ Project Structure
